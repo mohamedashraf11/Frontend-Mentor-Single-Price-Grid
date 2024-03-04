@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLOS */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-blue: hsl(71, 73%, 54%);
+  --light-grey: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+main {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  background-color: var(--light-grey);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 700px;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 20px 0px rgb(42 179 176 / 20%);
+}
+
+.card > div {
+  padding: 50px;
+  flex-basis: 50%;
+  color: white;
+}
+
+.card .join {
+  flex-basis: 100%;
+  background-color: white;
+}
+
+.join > h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.join > span {
+  color: var(--bright-blue);
+  font-weight: 400;
+  font-size: 18px;
+  word-spacing: 3px;
+}
+
+.join > p {
+  line-height: 1.8;
+  margin-top: 20px;
+  word-spacing: 2px;
+  color: var(--grayish-blue);
+}
+
+.sign-up {
+  background-color: rgba(42, 179, 176, 255);
+}
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sign-up > .price {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up > .price > span:first-of-type {
+  font-size: 35px;
+}
+
+.sign-up > .price > span:last-of-type {
+  margin-left: 15px;
+  color: var(--bright-blue);
+}
+
+.sign-up > p {
+  margin: 10px 0;
+  color: var(--light-grey);
+}
+
+.sign-up > a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 45px;
+  background-color: var(--bright-blue);
+  font-weight: 700;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.why-us {
+  background-color: rgba(75, 190, 188, 255);
+}
+
+.why-us > ul {
+  list-style: none;
+}
+
+.why-us > ul > li {
+  margin-bottom: 5px;
+  color: var(--light-grey);
+}
+
+
+@media (max-width: 767px) {
+    .card {
+        flex-direction: column;
+    }
+}
